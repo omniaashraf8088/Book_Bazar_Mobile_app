@@ -1,8 +1,8 @@
 import 'package:books_bazar_app/core/widgets/custom_elevated_auth_button.dart';
 import 'package:books_bazar_app/core/router/routes.dart';
-import 'package:books_bazar_app/features/auth/presentation/verfication_email/presentation/widgets/custom_otp.dart';
-import 'package:books_bazar_app/features/auth/presentation/verfication_email/presentation/widgets/custom_verfication_email.dart';
-import 'package:books_bazar_app/features/auth/presentation/verfication_email/presentation/widgets/custom_verfication_text.dart';
+import 'package:books_bazar_app/features/auth/verification_auth/verfication_email/presentation/widgets/custom_otp.dart';
+import 'package:books_bazar_app/features/auth/verification_auth/verfication_email/presentation/widgets/custom_verfication_email.dart';
+import 'package:books_bazar_app/features/auth/verification_auth/verfication_email/presentation/widgets/custom_verfication_text.dart';
 import 'package:flutter/material.dart';
 
 class VerficationEmailScreen extends StatelessWidget {
@@ -31,7 +31,7 @@ class VerficationEmailScreen extends StatelessWidget {
                 CustomElvatedAuthButton(
                   text: 'Continue',
                   onPressed: () {
-                    Navigator.pushNamed(context, Routes.resetPhoneNumber);
+                    Navigator.pushNamed(context, Routes.registerPhoneNumber);
                   },
                 ),
               ],

@@ -2,6 +2,7 @@ class AppAssets {
   AppAssets._();
 
   // Images
+  static const String authorPhoto = 'assets/images/author_photo.png';
   static const String bestVendors = 'assets/images/best-vendors.png';
   static const String forgetPasswordSuccess =
       'assets/images/forget_password_success.png';

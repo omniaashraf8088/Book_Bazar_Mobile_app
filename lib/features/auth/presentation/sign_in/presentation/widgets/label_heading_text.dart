@@ -6,14 +6,21 @@ class LabelHeadingText extends StatelessWidget {
     super.key,
     required this.labelHeadingText,
     required this.subTitleHeadingText,
+    this.isHeadingLabelInCenter = true,
+     this.isSubTitleInCenter = true,
   });
   final String labelHeadingText;
   final String subTitleHeadingText;
+  final bool isHeadingLabelInCenter;
+   final bool isSubTitleInCenter;
+
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
+      crossAxisAlignment: isHeadingLabelInCenter
+          ? CrossAxisAlignment.center
+          : CrossAxisAlignment.start,
       children: [
         const SizedBox(height: 4),
         Text(
@@ -25,7 +32,7 @@ class LabelHeadingText extends StatelessWidget {
         Text(
           subTitleHeadingText,
           style: AppTextStyle.gray16w400,
-          textAlign: TextAlign.center,
+          textAlign: isSubTitleInCenter ? TextAlign.center : TextAlign.start,
         ),
       ],
     );

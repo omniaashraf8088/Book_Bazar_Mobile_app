@@ -8,10 +8,10 @@ class SignUpForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        SignInForm(labelFormText: 'Name', hintLabelFormText: 'Your name'),
-        SignInForm(labelFormText: 'Email', hintLabelFormText: 'Your email'),
+        SignInForm(headFormText: 'Name', hintLabelFormText: 'Your name'),
+        SignInForm(headFormText: 'Email', hintLabelFormText: 'Your email'),
         SignInForm(
-          labelFormText: 'Password',
+          headFormText: 'Password',
           hintLabelFormText: 'Your password',
           suffixIcon: Icons.visibility_off,
         ),

@@ -1,3 +1,4 @@
+import 'package:books_bazar_app/core/router/routes.dart';
 import 'package:books_bazar_app/core/utils/assets.gen.dart';
 import 'package:books_bazar_app/core/widgets/custom_elevated_auth_button.dart';
 
@@ -15,10 +16,12 @@ class ForgetPasswordScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
+
           children: [
-            const SizedBox(height: 16), 
             const LabelHeadingText(
+              isHeadingLabelInCenter: false,
+              isSubTitleInCenter: false,
               labelHeadingText: 'Forgot Password',
               subTitleHeadingText:
                   'Select which contact details should we use to reset your password',
@@ -31,6 +34,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                     imagePath: Assets.iconsImages.email.path,
                     text: 'Email',
                     subText: 'Send to your email',
+                    routePath: Routes.resetPasswordByEmail,
                   ),
                 ),
                 const SizedBox(width: 14),
@@ -39,20 +43,13 @@ class ForgetPasswordScreen extends StatelessWidget {
                     imagePath: Assets.iconsImages.phoneFill.path,
                     text: 'Phone Number',
                     subText: 'Send to your phone',
+                    routePath: Routes.resetPasswordByPhoneNum,
                   ),
                 ),
               ],
             ),
             const SizedBox(height: 49),
-            CustomElvatedAuthButton(
-              text: 'Continue',
-              onPressed: () {
-                Navigator.pushNamed(
-                  context,
-                  '/resetPasswordScreen',
-                );
-              },
-            ),
+            CustomElvatedAuthButton(text: 'Continue', onPressed: () {}),
           ],
         ),
       ),

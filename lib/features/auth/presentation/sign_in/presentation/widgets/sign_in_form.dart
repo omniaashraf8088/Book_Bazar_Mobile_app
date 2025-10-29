@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 class SignInForm extends StatelessWidget {
   const SignInForm({
     super.key,
-    required this.labelFormText,
+    required this.headFormText,
     required this.hintLabelFormText,
     this.suffixIcon,
   });
 
-  final String labelFormText;
+  final String headFormText;
   final String hintLabelFormText;
   final IconData? suffixIcon;
 
@@ -20,13 +20,15 @@ class SignInForm extends StatelessWidget {
       children: [
         Form(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Text(labelFormText, style: AppTextStyle.labelText14),
-              ),
+              Text(headFormText, style: AppTextStyle.labelText14),
               SizedBox(height: 6),
               TextFormField(
+                onChanged: (value) {
+                  
+                },
+                
                 obscureText:
                     suffixIcon != null, // Only obscure if it's a password field
                 decoration: InputDecoration(

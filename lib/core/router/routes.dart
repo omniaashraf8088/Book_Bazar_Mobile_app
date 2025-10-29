@@ -13,5 +13,12 @@ class Routes {
 
   static const String verifyPhoneCode = '/verifyPhoneCode';
 
-  static const String resetPhoneNumber = '/resetPhoneNumber';
+  static const String registerPhoneNumber = '/registerPhoneNumber';
+
+  static const String resetPasswordByEmail = '/resetPasswordByEmail';
+
+  static const String resetPasswordByPhoneNum = '/resetPasswordByPhoneNum';
+
+  static const String newPassword = '/newPassword';
+ 
 }

@@ -157,6 +157,13 @@ class AppTextStyle {
     height: 1.40,
   );
 
+  static TextStyle authorNameText = GoogleFonts.roboto(
+    color: AppColors.black, // Using AppColors instead of Color(0xFF121212)
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    height: 1.50,
+  );
+
   // Aliases for backward compatibility and semantic naming
   static TextStyle get readingBooksText => headingText24;
   static TextStyle get welcomeBackText => headingText24;

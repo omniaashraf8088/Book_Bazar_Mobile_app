@@ -23,10 +23,10 @@ class SignInBody extends StatelessWidget {
             subTitleHeadingText: 'Sign to your account',
           ),
           SizedBox(height: 24),
-          SignInForm(labelFormText: 'Email', hintLabelFormText: 'Your email'),
+          SignInForm(headFormText: 'Email', hintLabelFormText: 'Your email'),
           SizedBox(height: 16),
           SignInForm(
-            labelFormText: 'Password',
+            headFormText: 'Password',
             hintLabelFormText: 'Your password',
             suffixIcon: Icons.visibility_off,
           ),
@@ -41,7 +41,6 @@ class SignInBody extends StatelessWidget {
             textAsk: "Don't have an account?",
             textAction: " Sign Up",
             onTap: () {
-              print('Navigating to sign up screen'); // Debug print
               Navigator.pushNamed(context, Routes.signUp);
             },
           ),

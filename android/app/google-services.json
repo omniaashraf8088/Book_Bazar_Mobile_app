@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "318384006621",
+    "project_id": "books-bazar-app",
+    "storage_bucket": "books-bazar-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318384006621:android:69d6598365f5b70ffb4234",
+        "android_client_info": {
+          "package_name": "com.example.books_bazar_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbzrRQW4WpHcpAgMxqfX80ayeSXNP-wCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
