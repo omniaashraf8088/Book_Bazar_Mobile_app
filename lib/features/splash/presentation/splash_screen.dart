@@ -31,7 +31,9 @@ class _SplashScreenState extends State<SplashScreen> {
       onBoardingMethod();
       FirebaseAuth.instance.currentUser == null
           ? delayCustomnavigation(context, Routes.signUp)
-          : delayCustomnavigation(context, Routes.home);
+          : FirebaseAuth.instance.currentUser!.emailVerified==true?
+          delayCustomnavigation(context, Routes.home):
+          delayCustomnavigation(context, Routes.signIn);
     } else {
       onBoardingMethod();
       delayCustomnavigation(context, Routes.onBoarding);
