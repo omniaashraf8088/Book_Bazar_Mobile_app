@@ -1,8 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-/// An advanced, highly-readable Bloc observer for professional Flutter apps.
-/// Provides detailed, structured, and color-coded logs for all Bloc lifecycle events.
 class AppBlocObserver extends BlocObserver {
   @override
   void onCreate(BlocBase bloc) {

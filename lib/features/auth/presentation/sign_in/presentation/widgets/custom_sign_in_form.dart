@@ -6,6 +6,8 @@ import 'package:books_bazar_app/core/widgets/custom_elevated_auth_button.dart';
 import 'package:books_bazar_app/features/auth/presentation/model/auth_cubit.dart';
 import 'package:books_bazar_app/features/auth/presentation/sign_in/presentation/widgets/custom_sign_in_text_form_field.dart';
 import 'package:books_bazar_app/features/auth/presentation/sign_in/presentation/widgets/forget_password.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -18,7 +20,8 @@ class CustomSignInForm extends StatelessWidget {
       listener: (context, state) {
         if (state is SignInSuccessState) {
           CustomToastWidget("Sign in successful");
-          customNavigation(context, Routes.home);
+          FirebaseAuth.instance.currentUser!.emailVerified?
+          customNavigation(context, Routes.home): CustomToastWidget("plz: verify your email");
         } else if (state is SignInFailureState) {
           CustomToastWidget("Sign in failed: ${state.errorMessage}");
         }

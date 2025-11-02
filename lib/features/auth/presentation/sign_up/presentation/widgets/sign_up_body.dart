@@ -1,6 +1,5 @@
 import 'package:books_bazar_app/core/router/routes.dart';
 import 'package:books_bazar_app/features/auth/presentation/sign_in/presentation/widgets/check_have_account.dart';
-import 'package:books_bazar_app/features/auth/presentation/sign_up/presentation/widgets/sign_up_button.dart';
 import 'package:books_bazar_app/features/auth/presentation/sign_up/presentation/widgets/sign_up_form.dart';
 import 'package:books_bazar_app/features/auth/presentation/sign_up/presentation/widgets/sign_up_header.dart';
 import 'package:books_bazar_app/features/auth/presentation/sign_up/presentation/widgets/terms_and_condition.dart';
