@@ -10,7 +10,7 @@ import 'package:books_bazar_app/features/auth/verification_auth/verfication_send
 import 'package:books_bazar_app/features/auth/presentation/sign_in/presentation/screen/signin_screen.dart';
 import 'package:books_bazar_app/features/auth/presentation/sign_up/presentation/screen/sign_up_screen.dart';
 import 'package:books_bazar_app/features/auth/verification_auth/verfication_email/presentation/screen/verfication_email.dart';
-import 'package:books_bazar_app/features/home/presentation/screen/home_screen.dart';
+import 'package:books_bazar_app/features/nav_bar/home/presentation/screen/home_screen.dart';
 import 'package:books_bazar_app/features/on_boarding/presentation/screen/on_bording_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:books_bazar_app/features/splash/presentation/splash_screen.dart';

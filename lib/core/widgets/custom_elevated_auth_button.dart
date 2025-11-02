@@ -18,15 +18,11 @@ class CustomElvatedAuthButton extends StatelessWidget {
         backgroundColor: AppColors.purple,
         minimumSize: const Size(327, 48),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        // Ensure the button is never disabled-looking
+     
         disabledBackgroundColor: AppColors.purple.withValues(alpha: 0.7),
       ),
       onPressed:
-          onPressed ??
-          () {
-            // Default empty callback to prevent null onPressed
-            debugPrint('Button pressed but no onPressed callback provided');
-          },
+          onPressed ,
       child: Text(text, style: AppTextStyle.customButtonText),
     );
   }

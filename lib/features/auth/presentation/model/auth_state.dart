@@ -5,6 +5,8 @@ abstract class AuthState {}
 
 class AuthInitial extends AuthState {}
 
+class SignUpLoadingState extends AuthState {}
+
 class SignUpSuccessState extends AuthState {}
 
 class SignUpFailureState extends AuthState {
@@ -12,4 +14,11 @@ class SignUpFailureState extends AuthState {
   SignUpFailureState({required this.errorMessage});
 }
 
-class SignUpLoadingState extends AuthState {}
+class SignInLoadingState extends AuthState {}
+
+class SignInSuccessState extends AuthState {}
+
+class SignInFailureState extends AuthState {
+  final String errorMessage;
+  SignInFailureState({required this.errorMessage});
+}

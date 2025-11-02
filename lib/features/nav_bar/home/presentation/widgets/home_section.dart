@@ -1,4 +1,4 @@
-import 'package:books_bazar_app/features/home/presentation/widgets/custom_label_heading.dart';
+import 'package:books_bazar_app/features/nav_bar/home/presentation/widgets/custom_label_heading.dart';
 import 'package:flutter/material.dart';
 
 class HomeSection extends StatelessWidget {

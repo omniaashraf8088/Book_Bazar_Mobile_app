@@ -1,8 +1,8 @@
-import 'package:books_bazar_app/features/home/presentation/widgets/best_vendors_section.dart';
-import 'package:books_bazar_app/features/home/presentation/widgets/custom_author_details.dart';
-import 'package:books_bazar_app/features/home/presentation/widgets/home_section.dart';
-import 'package:books_bazar_app/features/home/presentation/widgets/special_offer_section.dart';
-import 'package:books_bazar_app/features/home/presentation/widgets/top_of_week_section.dart';
+import 'package:books_bazar_app/features/nav_bar/home/presentation/widgets/best_vendors_section.dart';
+import 'package:books_bazar_app/features/nav_bar/home/presentation/widgets/custom_author_details.dart';
+import 'package:books_bazar_app/features/nav_bar/home/presentation/widgets/home_section.dart';
+import 'package:books_bazar_app/features/nav_bar/home/presentation/widgets/special_offer_section.dart';
+import 'package:books_bazar_app/features/nav_bar/home/presentation/widgets/top_of_week_section.dart';
 import 'package:flutter/material.dart';
 
 class HomeBody extends StatelessWidget {

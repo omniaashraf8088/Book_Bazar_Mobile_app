@@ -1,4 +1,1 @@
-class AppDefention{
-
-  
-}
+class AppDefention {}

@@ -1,3 +1,116 @@
 {
-    "cmake.ignoreCMakeListsMissing": true
+    "cmake.ignoreCMakeListsMissing": true,
+    "dart.debugExternalPackageLibraries": true,
+    "workbench.colorCustomizations": {
+        "editor.background": "#000000",
+        "editor.foreground": "#FFF44F",
+        "sideBar.background": "#111A11",
+        "sideBar.foreground": "#FFF44F",
+        "activityBar.background": "#1B2B1B",
+        "activityBar.foreground": "#39FF14",
+        "activityBar.activeBorder": "#39FF14",
+        "activityBarBadge.background": "#39FF14",
+        "activityBarBadge.foreground": "#000000",
+        "list.activeSelectionBackground": "#1B2B1B",
+        "list.activeSelectionForeground": "#FFF44F",
+        "list.inactiveSelectionBackground": "#111A11",
+        "list.inactiveSelectionForeground": "#FFF44F",
+        "terminal.ansiBlack": "#222222",
+        "terminal.ansiRed": "#FF1744",         // Errors: bright red
+        "terminal.ansiGreen": "#00E676",
+        "terminal.ansiBlue": "#2979FF",
+        "terminal.ansiMagenta": "#D500F9",
+        "terminal.ansiCyan": "#00B8D4",
+        "terminal.ansiWhite": "#FFFDE7",
+        "terminal.ansiBrightBlack": "#757575",
+        "terminal.ansiBrightRed": "#FF5252",    // Errors: even brighter red
+        "terminal.ansiBrightGreen": "#69F0AE",
+        "terminal.ansiBrightYellow": "#FFFF00", // Warnings: bright yellow
+        "terminal.ansiBrightBlue": "#82B1FF",
+        "terminal.ansiBrightMagenta": "#EA80FC",
+        "terminal.ansiBrightCyan": "#84FFFF",
+        "terminal.ansiBrightWhite": "#FFFFFF"
+    },
+    "material-icon-theme.folders.color": "#39FF14",
+    "material-icon-theme.folders.theme": "classic",
+    "editor.fontSize": 22,
+    "editor.lineHeight": 1.1,
+    "terminal.integrated.fontSize": 13,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "meta.import.dart",
+                    "meta.import.dart keyword.other.import.dart",
+                    "meta.import.dart string.quoted.single.dart",
+                    "meta.import.dart string.quoted.double.dart"
+                ],
+                "settings": {
+                    "foreground": "#FF9100", // orange for extra imports
+                    "fontStyle": "underline"
+                }
+            },
+            {
+                "scope": ["meta.import.dart + meta.block.dart"],
+                "settings": {
+                    "foreground": "#9C27B0", // purple for the line below extra imports
+                }
+            },
+            {
+                "scope": ["variable", "variable.parameter", "variable.other.readwrite"],
+                "settings": {
+                    "foreground": "#A1887F" // brown
+                }
+            },
+            {
+                "scope": ["entity.name.function", "support.function"],
+                "settings": {
+                    "foreground": "#FFB300" // caramel
+                }
+            },
+            {
+                "scope": ["entity.name.type", "support.class", "meta.class", "meta.class.dart"],
+                "settings": {
+                    "foreground": "#9C27B0" // purple (betngani)
+                }
+            },
+            {
+                "scope": ["keyword", "keyword.control", "storage.type"],
+                "settings": {
+                    "foreground": "#FF4081" // pink
+                }
+            },
+            {
+                "scope": ["string", "constant.other.symbol"],
+                "settings": {
+                    "foreground": "#FFF44F" // lemon (limited)
+                }
+            },
+            {
+                "scope": ["constant.numeric", "constant.language"],
+                "settings": {
+                    "foreground": "#00B8D4" // blue
+                }
+            },
+            {
+                "scope": ["entity.name.tag", "support.constant.widget.dart"],
+                "settings": {
+                    "foreground": "#FF80AB" // light pink
+                }
+            },
+            {
+                "scope": ["variable.other.property", "meta.attribute"],
+                "settings": {
+                    "foreground": "#00E676" // green
+                }
+            },
+            {
+                "scope": ["comment", "punctuation.definition.comment"],
+                "settings": {
+                    "foreground": "#8D6E63", // dark brown
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    }
 }

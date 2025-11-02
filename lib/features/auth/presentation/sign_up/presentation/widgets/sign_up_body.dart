@@ -22,8 +22,6 @@ class SignUpBody extends StatelessWidget {
                 const SizedBox(height: 24),
                 const SignUpForm(),
                 const SizedBox(height: 24),
-                const SignUpButton(),
-                const SizedBox(height: 24),
                 CheckHaveAccount(
                   textAsk: 'Have an account?',
                   textAction: ' Sign In',
@@ -31,11 +29,11 @@ class SignUpBody extends StatelessWidget {
                     Navigator.pushNamed(context, Routes.signIn);
                   },
                 ),
-                const SizedBox(height: 40), 
+                const SizedBox(height: 40),
               ],
             ),
           ),
-          
+
           const Center(
             child: Padding(
               padding: EdgeInsets.symmetric(vertical: 16),

@@ -6,6 +6,8 @@ import 'package:books_bazar_app/core/utils/assets.gen.dart';
 import 'package:books_bazar_app/core/utils/app_colors.dart';
 import 'package:books_bazar_app/core/utils/app_text_style.dart';
 import 'package:books_bazar_app/features/on_boarding/presentation/screen/function/onboarding.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -27,8 +29,9 @@ class _SplashScreenState extends State<SplashScreen> {
         getIt<CacheHelper>().getData(key: 'isVistedBefor') ?? false;
     if (!isVistedBefor) {
       onBoardingMethod();
-
-      delayCustomnavigation(context, Routes.signUp);
+      FirebaseAuth.instance.currentUser == null
+          ? delayCustomnavigation(context, Routes.signUp)
+          : delayCustomnavigation(context, Routes.home);
     } else {
       onBoardingMethod();
       delayCustomnavigation(context, Routes.onBoarding);
